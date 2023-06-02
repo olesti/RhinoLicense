@@ -6,7 +6,7 @@ const Main = async function Main(body) {
 
     try {
         console.log(body.mail);
-        emails=["oro11@gmail.com","ataly081@hotmail.com"];
+        emails=["oro11@gmail.com","kutez@gmail.com"];
         if(emails.includes(body.mail))
         {
             return Promise.resolve("ss");
