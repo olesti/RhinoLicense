@@ -12,7 +12,7 @@ const port = process.env.Port||5000;
 //app.post("/parasut-einvoce", createEInvoce);
 app.post("/Login", Login);
 
-app.get("*", function(req, res) 
+app.get("/", function(req, res) 
 {
     console.log(req.body);
   //res.status(200).send("OK");
