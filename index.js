@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const port = process.env.Port||5000;
 //app.post("/parasut-einvoce", createEInvoce);
 app.post("/Login", Login);
 
@@ -18,6 +19,6 @@ app.get("*", function(req, res)
 });
 
 
-app.listen( 3001, () => {
-  console.log(`Sunucu ${3001} portunda başlatıldı...`);
+app.listen( port, () => {
+  console.log(`Sunucu ${port} portunda başlatıldı...`);
 });
